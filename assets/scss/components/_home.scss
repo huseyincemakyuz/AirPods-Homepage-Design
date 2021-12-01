@@ -5,14 +5,12 @@
     ///////// Sub__nav
    .sub__nav{
         display: flex;
-        padding: 25px 80px;
         justify-content: center;
         place-items: center;
 
         .sub__nav__list {
             display: flex;
             align-items: center;
-            font-size: 1.70rem;
             font-family: $body-font;
             font-weight: $font-regular;
         }
@@ -21,7 +19,7 @@
             font-family: $body-font;
             display: flex ;
             flex-direction: column;
-            margin: 0 30px;
+            margin: 5px 15px;
             text-align: center;
          }
 
@@ -40,8 +38,8 @@
         // display: grid;
         // grid-template: 100px 400px 400px 100px/ 100px 400px 400px 100p;
         // grid-gap: 10px 5px;
-        padding: 70px 25px;
-        margin: 10px 57px 40px 40px ;
+        padding: 65px 15px;
+        margin: 10px 37px 40px 20px ;
         place-items: center;
         border: 1px solid;
         border: none;
@@ -53,7 +51,7 @@
         .content__header {
             display: flex;
             flex-direction: column;
-            font-size: $biggest-font-size;
+            font-size: $bigger-font-size;
             grid-column: 1 / 5;
             grid-row: 1/2;
             
@@ -61,7 +59,7 @@
                font-weight: $font-regular
             }
             .content__text {
-                font-size: $bigger-font-size;
+                font-size: $big-font-size;
             }
         }
 
@@ -76,8 +74,8 @@
                
             
                 .content_img_icon1 {
-                    width: 180px;
-                    margin-right: 20px;
+                    width: 100px;
+                    margin-right: 15px;
                 }
             }
             .content__img2{
@@ -87,8 +85,8 @@
                 margin-bottom: -60px;
                 
                 .content_img_icon2 {
-                    width: 180px;
-                    margin-left: 20px;
+                    width: 100px;
+                    margin-left: 15px;
                 }
             }
 
@@ -99,7 +97,7 @@
             margin-top: 115px;
 
             p {
-                font-size: $bigger-font-size;
+                font-size: $big-font-size;
                 font-weight: $font-regular;
                 color: $first-color;
                 margin-bottom: 10px;
@@ -107,7 +105,7 @@
 
             i {
                 margin-top: 10px;
-                font-size: 76px;
+                font-size: 56px;
                 color: rgb(86, 13, 155)
             }
         }

@@ -1,23 +1,20 @@
 .footer {
     background-color: $section-light;
     height: 180px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    display: grid;
-    grid-template: 1fr 1fr / 1f;
 
     h1 {
-        font-size: $bigger-font-size;
+        font-size: $big-font-size;
         font-weight: $font-regular;
-        grid-row: 1/2;
         align-items: center;
-        margin-top: 25px;
     }
 
     .social__media {
-        grid-row: 2/3;
+       
          .social__media__icon {
-             font-size: 40px;
-             margin: 13px;
+             font-size: $big-font-size;
              color:$first-color
          }
     }

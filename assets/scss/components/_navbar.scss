@@ -21,13 +21,13 @@
         color:$first-color;
         font-family: $body-font;
         font-weight: $font-bold;
-        font-size: $bigger-font-size;
+        font-size: $big-font-size;
         margin: 5px 20px;
     }
 
     .nav__list {
         display: flex;
-        font-size: $bigger-font-size;
+        font-size: $big-font-size;
     }
     
     .nav__item{
@@ -36,9 +36,9 @@
     
     .nav__toggle {
         color: $first-color;
-        font-size: 46px;
+        font-size: 36px;
         align-items: center;
-        margin-left: 300px;
+        margin-left: 110px;
     }
     
     .nav__link{
@@ -46,14 +46,14 @@
     }
 
     .nav__compare{
-        font-size: $bigger-font-size;
+        font-size: $big-font-size;
         font-weight: $font-regular;
         color: $white-color;
         border: 1px solid;
+        border-color: $border-color;
         background-color: $first-color;
-        border-radius: 35px;
-        padding: 15px;
-        margin: 10px 25px;
+        border-radius: 27px;
+        padding: 12px;
     }
 }
 

@@ -19,11 +19,12 @@ html {
 }
 
 body {
-  margin: 5.5rem 0 0 0;
+  margin: 4rem 0 0 0;
   font-family: "Roboto", sans-serif;
   background-color: #f4f4f6;
   color: #1d1d1f;
   overflow: auto;
+  height: auto;
 }
 
 ul {
@@ -48,7 +49,7 @@ img {
   border-bottom: 1px solid;
   border-color: gray;
   background-color: #fff;
-  height: 5.5rem;
+  height: 4rem;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -64,13 +65,13 @@ img {
   color: #1d1d1f;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.25rem;
   margin: 5px 20px;
 }
 
 .nav .nav__list {
   display: flex;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .nav .nav__item {
@@ -79,9 +80,9 @@ img {
 
 .nav .nav__toggle {
   color: #1d1d1f;
-  font-size: 46px;
+  font-size: 36px;
   align-items: center;
-  margin-left: 300px;
+  margin-left: 110px;
 }
 
 .nav .nav__link {
@@ -89,14 +90,14 @@ img {
 }
 
 .nav .nav__compare {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #fff;
   border: 1px solid;
+  border-color: gray;
   background-color: #1d1d1f;
-  border-radius: 35px;
-  padding: 15px;
-  margin: 10px 25px;
+  border-radius: 27px;
+  padding: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -138,7 +139,6 @@ img {
 
 .main .sub__nav {
   display: flex;
-  padding: 25px 80px;
   justify-content: center;
   place-items: center;
 }
@@ -146,7 +146,6 @@ img {
 .main .sub__nav .sub__nav__list {
   display: flex;
   align-items: center;
-  font-size: 1.70rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -155,7 +154,7 @@ img {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 0 30px;
+  margin: 5px 15px;
   text-align: center;
 }
 
@@ -169,8 +168,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 70px 25px;
-  margin: 10px 57px 40px 40px;
+  padding: 65px 15px;
+  margin: 10px 37px 40px 20px;
   place-items: center;
   border: 1px solid;
   border: none;
@@ -182,7 +181,7 @@ img {
 .main .content .content__header {
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 2rem;
   grid-column: 1 / 5;
   grid-row: 1/2;
 }
@@ -192,7 +191,7 @@ img {
 }
 
 .main .content .content__header .content__text {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .main .content .content__pods {
@@ -207,8 +206,8 @@ img {
 }
 
 .main .content .content__pods .content__img1 .content_img_icon1 {
-  width: 180px;
-  margin-right: 20px;
+  width: 100px;
+  margin-right: 15px;
 }
 
 .main .content .content__pods .content__img2 {
@@ -219,8 +218,8 @@ img {
 }
 
 .main .content .content__pods .content__img2 .content_img_icon2 {
-  width: 180px;
-  margin-left: 20px;
+  width: 100px;
+  margin-left: 15px;
 }
 
 .main .content .content__scroll {
@@ -229,7 +228,7 @@ img {
 }
 
 .main .content .content__scroll p {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #1d1d1f;
   margin-bottom: 10px;
@@ -237,7 +236,7 @@ img {
 
 .main .content .content__scroll i {
   margin-top: 10px;
-  font-size: 76px;
+  font-size: 56px;
   color: #560d9b;
 }
 
@@ -273,10 +272,9 @@ img {
 .details {
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr / 4fr 4fr;
-  padding: 27px;
-  margin-top: 150px;
+  margin-top: 50px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -287,13 +285,13 @@ img {
 
 .details .details__left__side span {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .details .details__right__side {
   grid-row: 2 / 4;
   grid-column: 2 / 4;
-  width: 480px;
+  width: 220px;
   margin-top: -40px;
 }
 
@@ -323,26 +321,19 @@ img {
 .footer {
   background-color: #f0f0f0;
   height: 180px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  display: grid;
-  grid-template: 1fr 1fr / 1f;
 }
 
 .footer h1 {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  grid-row: 1/2;
   align-items: center;
-  margin-top: 25px;
-}
-
-.footer .social__media {
-  grid-row: 2/3;
 }
 
 .footer .social__media .social__media__icon {
-  font-size: 40px;
-  margin: 13px;
+  font-size: 1.25rem;
   color: #1d1d1f;
 }
 

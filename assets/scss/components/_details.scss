@@ -1,10 +1,10 @@
 .details {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 4fr 4fr ;
-    padding: 27px;
-    margin-top: 150px;
+    // padding: 27px;
+    margin-top: 50px;
     text-align: center;
-    font-size: $bigger-font-size;
+    font-size: $big-font-size;
     font-weight: $font-regular;
 
     .details__left__side{
@@ -13,14 +13,14 @@
 
         span {
             font-weight: $font-bold;
-            font-size: $biggest-font-size;
+            font-size: $bigger-font-size;
         }
        
     }
     .details__right__side {
         grid-row: 2 / 4;
         grid-column: 2 / 4;
-        width:480px;
+        width:220px;
         margin-top: -40px;
     }
 }
