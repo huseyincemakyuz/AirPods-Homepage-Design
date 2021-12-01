@@ -1,0 +1,26 @@
+.details {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 4fr 4fr ;
+    padding: 27px;
+    margin-top: 150px;
+    text-align: center;
+    font-size: $bigger-font-size;
+    font-weight: $font-regular;
+
+    .details__left__side{
+        grid-row: 1 / 4;
+        grid-column: 1 / 2;
+
+        span {
+            font-weight: $font-bold;
+            font-size: $biggest-font-size;
+        }
+       
+    }
+    .details__right__side {
+        grid-row: 2 / 4;
+        grid-column: 2 / 4;
+        width:480px;
+        margin-top: -40px;
+    }
+}

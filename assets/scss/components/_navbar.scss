@@ -28,15 +28,16 @@
         display: flex;
         align-items: center;
     }
-    .nav__item {
-        display: none;
-    }
+
     .nav__toggle {
         color: $first-color;
         font-size: 46px;
         align-items: center;
         margin-right: 10px;
-       
+    }
+
+    .nav__item{
+        display: none;
     }
 
     .nav__compare{
@@ -48,5 +49,21 @@
         border-radius: 35px;
         padding: 15px;
         margin: 10px 25px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__item {
+        display: flex;
+        font-size: $bigger-font-size;
+        margin: 16px;
+    }
+    .nav__link {
+        color:$first-color;
+        font-weight: $font-regular;
     }
 }
