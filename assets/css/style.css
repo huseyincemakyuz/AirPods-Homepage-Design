@@ -71,18 +71,22 @@ img {
 
 .nav .nav__list {
   display: flex;
-  align-items: center;
+  font-size: 2rem;
+}
+
+.nav .nav__item {
+  padding: 7px;
 }
 
 .nav .nav__toggle {
   color: #1d1d1f;
   font-size: 46px;
   align-items: center;
-  margin-right: 10px;
+  margin-left: 300px;
 }
 
-.nav .nav__item {
-  display: none;
+.nav .nav__link {
+  color: #1d1d1f;
 }
 
 .nav .nav__compare {
@@ -97,17 +101,34 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .nav {
+    justify-content: space-evenly;
+  }
   .nav__toggle {
     display: none;
   }
-  .nav__item {
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    /*  5.9rem*/
     display: flex;
+    flex-direction: column;
     font-size: 2rem;
-    margin: 16px;
-  }
-  .nav__link {
-    color: #1d1d1f;
     font-weight: 400;
+    left: 0;
+    background-color: #fff;
+    border-radius: 36px;
+    width: calc(100% - 3rem);
+    height: auto;
+    margin-left: 1rem;
+    padding: 5rem 2rem;
+    z-index: 100;
+    text-align: center;
+    align-items: center;
+    transition: all 0.5s;
   }
 }
 
@@ -211,6 +232,33 @@ img {
   margin-top: 10px;
   font-size: 76px;
   color: #270249;
+}
+
+@media screen and (min-width: 768px) {
+  .sub__nav {
+    display: flex;
+    justify-content: space-around;
+    color: red;
+  }
+  .content {
+    grid-template: 1fr 1fr 1fr 1fr /1fr 1fr 1fr 1fr;
+    display: grid;
+    width: 75%;
+  }
+  .content .content__header {
+    grid-row: 1 / 3;
+    grid-column: 1/3;
+  }
+  .content .content__img1 {
+    grid-row: 2/4;
+    grid-column: 3/4;
+    margin-right: 0px;
+  }
+  .content .content__img2 {
+    grid-row: 2/4;
+    grid-column: 4/5;
+    margin-left: 0px;
+  }
 }
 
 .details {
