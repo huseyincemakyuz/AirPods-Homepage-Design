@@ -1,7 +1,8 @@
 .main {
     background-color: $body-color;
     padding: 5px;
-
+    
+    ///////// Sub__nav
    .sub__nav{
         display: flex;
         padding: 25px 80px;
@@ -29,7 +30,7 @@
     .sub__nav__link{
         color:$first-color;
     }
-
+    /////////  Content
     .content {
         background-color: $section-light;
         text-align: center;
