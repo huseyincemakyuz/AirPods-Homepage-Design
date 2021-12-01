@@ -168,9 +168,8 @@ img {
 .main .content {
   background-color: #f0f0f0;
   text-align: center;
-  display: grid;
-  grid-template: 100px 400px 400px 100px/ 100px 400px 400px 100p;
-  grid-gap: 10px 5px;
+  display: flex;
+  flex-direction: column;
   padding: 70px 25px;
   margin: 10px 57px 40px 40px;
   place-items: center;
@@ -197,29 +196,37 @@ img {
   font-size: 2rem;
 }
 
-.main .content .content__img1 {
-  grid-row: 2/5;
-  grid-column: 1/3;
-  margin-top: -20px;
-  margin-left: 45px;
+.main .content .content__pods {
+  display: flex;
+  flex-direction: row;
 }
 
-.main .content .content__img2 {
-  grid-row: 2/5;
-  grid-column: 3/5;
-  margin-top: 100px;
-  margin-right: 45px;
+.main .content .content__pods .content__img1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
 }
 
-.main .content .content_img_icon {
-  width: 200px;
+.main .content .content__pods .content__img1 .content_img_icon1 {
+  width: 180px;
+  margin-right: 20px;
+}
+
+.main .content .content__pods .content__img2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-bottom: -60px;
+}
+
+.main .content .content__pods .content__img2 .content_img_icon2 {
+  width: 180px;
+  margin-left: 20px;
 }
 
 .main .content .content__scroll {
-  grid-row: 5/5;
-  grid-column: 1/5;
   padding: 10px;
-  margin-top: 45px;
+  margin-top: 115px;
 }
 
 .main .content .content__scroll p {
@@ -232,33 +239,24 @@ img {
 .main .content .content__scroll i {
   margin-top: 10px;
   font-size: 76px;
-  color: #270249;
+  color: #560d9b;
 }
 
 @media screen and (min-width: 768px) {
-  .sub__nav__link {
-    display: flex;
-    justify-content: space-around;
-    color: red;
-  }
   .content {
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
-    display: grid;
-    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .content .content__header {
-    grid-row: 1 / 4;
-    grid-column: 1/3;
+    display: flex;
+    text-align: left;
   }
-  .content .content__img1 {
-    grid-row: 2/4;
-    grid-column: 3/4;
-    margin-right: 0px;
+  .content .content__img {
+    display: flex;
   }
-  .content .content__img2 {
-    grid-row: 2/4;
-    grid-column: 4/5;
-    margin-left: 0px;
+  .content .content__scroll {
+    text-align: center;
   }
 }
 
