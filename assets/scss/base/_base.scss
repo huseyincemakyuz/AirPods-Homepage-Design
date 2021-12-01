@@ -15,7 +15,7 @@ html {
 
 body {
   margin: $header-height 0 0 0;
-  font-family: var(--body-font);
+  font-family: $body-font;
   background-color: $body-color;
   color: $first-color;
   overflow: auto;
