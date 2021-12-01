@@ -36,6 +36,7 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         // display: grid;
         // grid-template: 100px 400px 400px 100px/ 100px 400px 400px 100p;
         // grid-gap: 10px 5px;
@@ -114,19 +115,33 @@
 }
 
 @media screen and (min-width: 768px) {
+        
+        .sub__nav{
+            justify-content: space-between;
+        }
 
         .content {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
+            align-content: center;
+           
 
             .content__header {
                display: flex;
+               flex-direction: column;
                text-align: left;
+               align-content: center;
             }
 
-            .content__img{
+            .content__img1{
                display: flex;
+               align-self: start;
+            }
+            
+            .content__img2{
+                display: flex;
+                text-align: right;
             }
             
             .content__scroll{
