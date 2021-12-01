@@ -1,6 +1,6 @@
 .footer {
     background-color: $section-light;
-    height: 180px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -9,13 +9,15 @@
         font-size: $big-font-size;
         font-weight: $font-regular;
         align-items: center;
+        margin-top: 10px;
     }
 
     .social__media {
-       
+        margin-top: 10px;
          .social__media__icon {
              font-size: $big-font-size;
-             color:$first-color
+             color:$first-color;
+             margin-left: 20px;
          }
     }
 }
