@@ -24,3 +24,33 @@
         margin-top: -40px;
     }
 }
+
+@media screen and (min-width:768px) {
+    .details{
+       margin-top: 100px;
+       width: 100%;
+       display: grid;
+       grid-template: 1fr 1fr 1fr 1fr / 4fr 4fr 4fr 4fr;
+       text-align: center;
+       padding: 0px;
+       
+       .details__left__side{
+        grid-row: 2/4;
+        grid-column: 2/3;
+
+        span {
+            font-size: 100px;
+        }
+       }
+      .details__right__side {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        margin-top: 150px;
+      }
+       
+    }
+
+  
+
+   
+}
