@@ -46,7 +46,6 @@
     }
     
     .nav__toggle {
-        display: flex;
         color: $first-color;
         font-size: 36px;
         align-items: center;
@@ -69,8 +68,21 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .nav__link {
-        color:red 
+@media screen and (min-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+
+        .nav__list {
+            // margin-left: 850px;
+        }
+
+        .nav__toggle {
+            display: none;
+        }
+
     }
+
+   
+   
 }
