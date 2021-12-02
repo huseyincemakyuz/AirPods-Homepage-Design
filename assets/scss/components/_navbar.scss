@@ -1,3 +1,7 @@
+#header {
+    position: absolute;
+    width: 100%; 
+}
 .show{
     top:5.9rem !important;
 }
@@ -42,6 +46,7 @@
     }
     
     .nav__toggle {
+        display: flex;
         color: $first-color;
         font-size: 36px;
         align-items: center;
@@ -64,36 +69,8 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-
-   .nav {
-        justify-content: space-evenly;
-    }
-    .nav__toggle {
-        display: none;
-    }
-
-}
-
 @media screen and (max-width: 768px) {
-    .nav__menu {
-        position: fixed;
-        top: -100%; /*  5.9rem*/ 
-        display: flex;
-        flex-direction: column;
-        font-size: $bigger-font-size;
-        font-weight: $font-regular;
-        left: 0;
-        background-color: $white-color;
-        border-radius: 36px; 
-        width: calc(100% - 3rem);
-        height: auto;
-        margin-left: 1rem;
-        padding: 5rem 2rem;
-        z-index: $z-index;
-        text-align: center;
-        align-items: center;
-        transition: all 0.5s;
+    .nav__link {
+        color:red 
     }
 }
-
