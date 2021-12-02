@@ -37,9 +37,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        // display: grid;
-        // grid-template: 100px 400px 400px 100px/ 100px 400px 400px 100p;
-        // grid-gap: 10px 5px;
         padding: 65px 15px;
         margin: 10px 37px 40px 20px ;
         place-items: center;
@@ -109,7 +106,8 @@
             i {
                 margin-top: 10px;
                 font-size: 56px;
-                color: rgb(86, 13, 155)
+                color: rgb(86, 13, 155);
+                cursor: pointer;
             }
         }
     }
