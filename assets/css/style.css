@@ -71,6 +71,7 @@ img {
   padding: 0 10px;
   color: #fff;
   text-align: center;
+  z-index: 100;
 }
 
 .nav .nav__logo {
@@ -233,6 +234,8 @@ img {
   display: flex;
   flex-direction: row;
   margin-top: 40px;
+  -webkit-animation: action_one 2s infinite  alternate;
+  animation: action_one 2s infinite  alternate;
 }
 
 .main .content .content__pods .content__img1 .content_img_icon1 {
@@ -245,6 +248,8 @@ img {
   flex-direction: row;
   margin-top: 80px;
   margin-bottom: -60px;
+  -webkit-animation: action_two 2s infinite  alternate;
+  animation: action_two 2s infinite  alternate;
 }
 
 .main .content .content__pods .content__img2 .content_img_icon2 {
@@ -269,6 +274,42 @@ img {
   font-size: 56px;
   color: #560d9b;
   cursor: pointer;
+}
+
+@-webkit-keyframes action_one {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes action_one {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes action_two {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes action_two {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -341,10 +382,30 @@ img {
 }
 
 .details .details__right__side {
+  -webkit-animation: action_one 2s infinite  alternate;
+  animation: action_one 2s infinite  alternate;
   grid-row: 2 / 4;
   grid-column: 2 / 4;
   width: 220px;
   margin-top: -40px;
+}
+
+@-webkit-keyframes action_one {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes action_one {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 768px) {
