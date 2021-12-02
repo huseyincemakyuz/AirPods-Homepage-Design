@@ -2,7 +2,7 @@
     background-color: $body-color;
     padding: 5px;
     
-    ///////// Sub__nav
+    ///////// Sub__nav //////////
    .sub__nav{
         display: flex;
         justify-content: space-between;
@@ -30,7 +30,7 @@
         }
     }
     
-    /////////  Content
+    /////////  Content //////////
     .content {
         background-color: $section-light;
         text-align: center;
@@ -118,6 +118,8 @@
     }
 }
 
+ ////////// Animations //////////
+
 @-webkit-keyframes action_one {
     0% { transform: translateY(-20px); }
     100% { transform: translateY(0); }
@@ -138,6 +140,7 @@
     100% { transform: translateY(-20px); }
 }
 
+////////// Responsive //////////
 
 @media screen and (min-width: 768px) {
         

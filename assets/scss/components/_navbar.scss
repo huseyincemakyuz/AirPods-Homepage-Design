@@ -1,3 +1,4 @@
+/////// Header part and show-class ///////
 #header {
     position: absolute;
     width: 100%; 
@@ -6,7 +7,7 @@
     top:3.9rem !important;
 }
 
-/////// Nav
+/////// Nav ///////
 .nav {
     position: fixed;
     top:0;
@@ -69,6 +70,8 @@
     }
 }
 
+////////// Responsive //////////
+
 @media screen and (min-width: 768px) {
     .nav {
         display: flex;
@@ -91,7 +94,7 @@
         }
     }
 }
-
+////////// Responsive for mobile toggle menu//////////
 @media screen and (max-width: 768px) {
     .nav__menu {
         position: fixed;
