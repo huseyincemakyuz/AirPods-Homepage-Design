@@ -63,16 +63,27 @@
         border: 1px solid;
         border-color: $border-color;
         background-color: $first-color;
-        border-radius: 27px;
-        padding: 12px;
+        border-radius: 55px;
+        padding: 6px 15px 6px 15px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .nav {
         display: flex;
-        flex: auto !important;
         justify-content: space-around;
+
+        .nav__logo{
+            margin-left: 142px;
+        }
+
+        .nav__list {
+           margin-left: 540px;
+        }
+
+        .nav__compare{
+            margin-right: 160px;
+        }
     
         .nav__toggle {
             display: none;

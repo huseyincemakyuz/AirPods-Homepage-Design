@@ -108,15 +108,23 @@ img {
   border: 1px solid;
   border-color: gray;
   background-color: #1d1d1f;
-  border-radius: 27px;
-  padding: 12px;
+  border-radius: 55px;
+  padding: 6px 15px 6px 15px;
 }
 
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
-    flex: auto !important;
     justify-content: space-around;
+  }
+  .nav .nav__logo {
+    margin-left: 142px;
+  }
+  .nav .nav__list {
+    margin-left: 540px;
+  }
+  .nav .nav__compare {
+    margin-right: 160px;
   }
   .nav .nav__toggle {
     display: none;
