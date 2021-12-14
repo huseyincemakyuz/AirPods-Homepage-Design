@@ -461,6 +461,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer {
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
